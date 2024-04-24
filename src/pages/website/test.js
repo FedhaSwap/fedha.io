@@ -5,7 +5,7 @@ function TradingVolume() {
     const { data, error, isLoading } = useQuery("/v1/public/info");
 console.log(data,error,isLoading)
     if (isLoading) return <div>Loading...</div>;
-    if (error) return <div>Error: {error.message}</div>;
+    if (error) return <div>Error: {error.message}</div>
   
     return (
       <pre className="text-sm">
