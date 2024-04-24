@@ -5,7 +5,7 @@ import { OrderlyConfigProvider } from "@orderly.network/hooks";
 import Home from './pages/website/home'
 import About from './pages/website/about'
 import Swap from './pages/account/swap'
-import Test from './pages/website/test'
+import OrderlyApi from './pages/website/orderlyApi'
 import { BrowserRouter, Routes, Route  } from 'react-router-dom';
 
 
@@ -23,7 +23,7 @@ const brokerId = "orderly";
        <Route path="/"  element={<Home/>} />
        <Route path="/about" element={<About/>} />
        <Route path="/swap" element={<Swap/>}/>
-       <Route path="/test" element={<Test/>}/>
+       <Route path="/orderlyApi" element={<OrderlyApi/>}/>
      </Routes>
      
     </BrowserRouter>
