@@ -23,7 +23,7 @@ const brokerId = "orderly";
        <Route path="/"  element={<Home/>} />
        <Route path="/about" element={<About/>} />
        <Route path="/swap" element={<Swap/>}/>
-       <Route path="/orderlyApi" element={<OrderlyApi/>}/>
+       <Route path="/orderlyapi" element={<OrderlyApi/>}/>
      </Routes>
      
     </BrowserRouter>
