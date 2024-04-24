@@ -14,4 +14,4 @@ console.log(data,error,isLoading)
     );
 }
 
-export default OrderlyApi;
+export default OrderlyApi
