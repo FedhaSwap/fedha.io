@@ -6,8 +6,7 @@ import Home from './pages/website/home'
 import About from './pages/website/about'
 import Swap from './pages/account/swap'
 import OrderlyApi from './pages/website/orderlyApi'
-import Header from '../src/pages/components/header'
-import Footer from '../src/pages/components/footer'
+
 import { BrowserRouter as Router, Route, Switch  } from 'react-router-dom';
 
 
