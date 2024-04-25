@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
 import { ethers } from "ethers";
 import Jazzicon from 'react-jazzicon'
+import { Link } from "react-router-dom";
 
 
 function trimAddress(address) {
@@ -165,14 +166,14 @@ function Header() {
                         <div className="row align-items-center">
                             <div className="col-12">
                                 <nav className="navbar navbar-expand-lg position-relative py-md-3 py-lg-6 workready">
-                                    <a href="/" className="navbar-brand d-flex align-items-center gap-2">
+                                    <Link to="/" className="navbar-brand d-flex align-items-center gap-2">
                                         <strong style={{ color: 'white' }}>Fedha.io</strong>
-                                    </a>
+                                    </Link>
                                     <div className="collapse navbar-collapse justify-content-between" id="navbar-content">
                                         <ul
                                             className="navbar-nav d-flex align-items-lg-center gap-5 gap-lg-1 gap-xl-4 gap-xxl-7 py-2 py-lg-0 ms-2 ms-xl-10 ms-xxl-20 ps-0 ps-xxl-10 align-self-center">
                                             <li className="dropdown">
-                                                <a href="/" className="fs-ten">Home</a>
+                                                <Link to="/" className="fs-ten">Home</Link>
                                             </li>
 
                                             <li className="dropdown show-dropdown">
@@ -181,17 +182,17 @@ function Header() {
                                                         className="ti ti-chevron-down"></i></button>
                                                 <ul className="dropdown-menu">
                                                     
-                                                    <li><a className="dropdown-item fs-ten" href={WalletAddress ? '/swap':"/"}>M-Pesa Swap</a></li>
+                                                    <li><Link className="dropdown-item fs-ten" to={WalletAddress ? '/swap':"/"}>M-Pesa Swap</Link></li>
                                                 </ul>
                                             </li>
                                             <li className="dropdown show-dropdown">
-                                                <a href="#" className="fs-ten">Farm</a>
+                                                <Link to="/" className="fs-ten">Farm</Link>
                                             </li>
                                             <li className="dropdown show-dropdown">
-                                                <a href="#" className="fs-ten">Arcade</a>
+                                                <Link to="/" className="fs-ten">Arcade</Link>
                                             </li>
                                             <li className="dropdown show-dropdown">
-                                                <a href="/about" className="fs-ten">About</a>
+                                                <Link to="/about" className="fs-ten">About</Link>
                                             </li>
 
 
